@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  touch-action: none;
+}
+
+#game-wrapper {
+  position: relative;
+  border: 6px solid #fff;
+}
+
+canvas {
+  display: block;
+  background: #b2dfdb;
+}
+
+/* 上方資訊（放大） */
+#ui-layer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  background: rgba(255,255,255,0.7);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* 長輩大按鈕區 */
+#mobile-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+/* 超大按鈕 */
+.big-btn {
+  width: 50%;
+  height: 110px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+/* 左右不同顏色（好辨識） */
+#btn-left {
+  background: #1976d2;
+}
+
+#btn-right {
+  background: #d32f2f;
+}
+
+.big-btn:active {
+  filter: brightness(1.3);
+}
+
+/* 結束畫面 */
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+}

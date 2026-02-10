@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="game-wrapper">
+  <canvas id="raftCanvas" width="400" height="650"></canvas>
+
+  <div id="ui-layer">
+    行程: <span id="distance">0</span>　
+    分數: <span id="score">0</span>
+  </div>
+
+  <!-- 長輩大按鈕 -->
+  <div id="mobile-controls">
+    <div class="big-btn" id="btn-left">← 左</div>
+    <div class="big-btn" id="btn-right">右 →</div>
+  </div>
+
+  <div id="game-over">
+    <h2>遊戲結束</h2>
+    <p>得分: <span id="final-score">0</span></p>
+    <button onclick="resetGame()">再玩一次</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
